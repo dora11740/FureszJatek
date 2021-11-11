@@ -1,0 +1,8 @@
+C:\Users\barna\source\repos\FureszSzamTipp\bin\Debug\FureszSzamTipp.exe.config
+C:\Users\barna\source\repos\FureszSzamTipp\bin\Debug\FureszSzamTipp.exe
+C:\Users\barna\source\repos\FureszSzamTipp\bin\Debug\FureszSzamTipp.pdb
+C:\Users\barna\source\repos\FureszSzamTipp\obj\Debug\FureszSzamTipp.csproj.SuggestedBindingRedirects.cache
+C:\Users\barna\source\repos\FureszSzamTipp\obj\Debug\FureszSzamTipp.csproj.CoreCompileInputs.cache
+C:\Users\barna\source\repos\FureszSzamTipp\obj\Debug\FureszSzamTipp.exe
+C:\Users\barna\source\repos\FureszSzamTipp\obj\Debug\FureszSzamTipp.pdb
+C:\Users\barna\source\repos\FureszSzamTipp\obj\Debug\FureszSzamTipp.csproj.AssemblyReference.cache
