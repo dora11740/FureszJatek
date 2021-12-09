@@ -40,25 +40,37 @@ namespace FureszSzamTipp
                         Console.BackgroundColor = ConsoleColor.DarkMagenta;
                         Console.WriteLine("Csukott szemmel neha jobban lat az ember. Szerintem te epp csukott szemmel gepelhettel, mert ez nem szam volt.\nKerlek szamot adj meg!");
                         Console.ResetColor();
-                        rosszValasz++;
-
+                        ++rosszValasz;
                         continue;
                     }
 
                     tipp = Int32.Parse(input);
-                    if (tipp != helyesSzam)
+                    if(tipp != helyesSzam)
+                        {
+                            ++rosszValasz;
+                        }
+                    else
+                        {
+                            break;
+                        }
+
+                    if (rosszValasz < 3)
                     {
                         Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.BackgroundColor = ConsoleColor.DarkMagenta;
                         Console.WriteLine("Rossz szamot adtal meg.\nKerlek probalkozz ujra!");
                         Console.ResetColor();
-                        rosszValasz++;
+                        continue;
                     }
-
                 }
+                
                 if (rosszValasz >= 3)
                 {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.BackgroundColor = ConsoleColor.DarkMagenta;
                     Console.WriteLine("3 rossz valaszt adtal, ezert most meghaltal. Ha a pokolra jutsz, csak az ordog segithet rajtad.");
+                    Console.ResetColor();
+                    Console.ReadLine();
                     return;
                 }
                 else
@@ -83,6 +95,7 @@ namespace FureszSzamTipp
                         Console.BackgroundColor = ConsoleColor.DarkMagenta;
                         Console.WriteLine("A legtobb ember annyira halatlan azert, hogy el. De te nem, mar tobbe nem. Elvezd hatralevo napjaidat!");
                         Console.ResetColor();
+                        Console.ReadLine();
                         return;
                     }
                     else
@@ -97,7 +110,7 @@ namespace FureszSzamTipp
         {
             //app infok
             string appNev = "Furesz Szam Tippeles";
-            string appVerzio = "1.0.0";
+            string appVerzio = "1.0.1";
             string appAuthor = "Georgieviczh Dora";
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
